@@ -1,13 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './Components/Navigation';
-import Player from './Components/Player';
+// import Player from './Components/Player';
+
 import Footer from './Components/Footer';
+import Main from './Components/Main';
 function App() {
   return (
     <div className="App">
       <Navigation/>
-      <Player/>
+      {/* <Player/> */}
+      <Main/>
       <Footer/>
     </div>
   );
