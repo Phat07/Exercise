@@ -1,29 +1,36 @@
-.content{
+/* nav{
+  display: flex;
+} */
+.content1 {
   display: flex;
   list-style: none;
   background-color: black;
 }
-.content li{
-  padding: 0 10px;
+ul{
+  text-decoration: none;
 }
-.content li a{
+.content1 li {
+  margin-right: 30px;
+}
+.content1 li a {
   text-decoration: none;
   color: white;
 }
-.active{
+.active {
   color: white;
 }
-.content li a:hover{
-  background-color:  rgb(172, 172, 95);
+.content1 li a:hover {
+  background-color: rgb(172, 172, 95);
 }
-img{
+img {
   max-width: 100%;
 }
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.container .column{
+.container .column {
   position: relative;
   background-color: #e8e6e6;
   margin: 20px 20px;
@@ -32,17 +39,98 @@ img{
 .container .column .card h3 {
   text-align: center;
 }
-.container .column .title{
+.container .column .title {
   text-align: center;
 }
-.container .column .card p button{
+.container .column .card p button {
   position: absolute;
   width: 100%;
   background-color: black;
   color: white;
 }
-.footer{
+.container .column .card p button a {
+  position: absolute;
+  left: 50%;
+}
+.footer {
   background-color: rgb(120, 120, 8);
   text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup img {
+  width: 100%;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: black;
+}
+.container1 {
+  background-color: aliceblue;
+  position: absolute;
+  left: 20%;
+  top: 6%;
+  width: 50%;
+  height: 90%;
+}
+.product-card .product-tumb{
+  width: 100%;
+  height: 100%;
+}
+.product-details h4{
+  font-size: large;
+}
+.product-details .product-price{
+  color: darkslateblue;
+  font-size: large
+}
+.App{
+  position: relative;
+  overflow: auto;
+  height: 800px;
 }
 
