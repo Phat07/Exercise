@@ -1,18 +1,26 @@
-import React, {Component} from "react";
+import React, {useContext} from 'react'
+import { ThemeContext } from './ThemeContext';
+import { Link } from 'react-router-dom';
+import { Navbar, NavItem, Icon } from "react-materialize";
 
-export default class Navigation extends Component{
-    render(){
-        return(
-            <div>
-                <nav>
-                    <ul className="content">
-                        <li><a className="active" href="#home">Home</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        )
-    }
+ const Navigation = () => {
+  // const { theme, toggle, dark } = useContext(ThemeContext)
+  return (
+    <Navbar className='menu red'
+    alignLinks='right'
+    brand={<span className='brand-logo'>Player Cards</span>}
+    id='mobile-nav'
+    menuIcon ={<Icon>menu</Icon>}
+    
+    >
+      <ul>
+        <li><Link to='/'><Icon left>home</Icon>Home</Link></li>
+        <li to='/about'><Link to='/about'><Icon left>info_outline</Icon>About</Link></li>
+        <li to='/news'><Link to='/news'><Icon left>dvr</Icon>News</Link></li>
+        <li><Link to='/contact'><Icon left>contacts</Icon>Contact</Link></li>
+      </ul>
+    </Navbar>
+  )
 }
+
+export default Navigation;
