@@ -1,14 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Navigation from './Components/Navigation';
-import Player from './Components/Player';
-import Footer from './Components/Footer';
+import AddUser from './components/AddUser';
+import User from './components/User';
+
 function App() {
   return (
     <div className="App">
-      <Navigation/>
-      <Player/>
-      <Footer/>
+     <AddUser/>
+     <User/>
     </div>
   );
 }
