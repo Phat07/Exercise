@@ -1,18 +1,35 @@
-import React, {Component} from "react";
+import React from 'react'
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
-export default class Navigation extends Component{
-    render(){
-        return(
-            <div>
-                <nav>
-                    <ul className="content">
-                        <li><a className="active" href="#home">Home</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        )
-    }
+export default function Navigation() {
+  return (
+    <div>
+        <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            News
+          </Typography>
+          <Link to='/contact'>Contact</Link>
+        </Toolbar>
+      </AppBar>
+    </Box>
+    </div>
+  )
 }
