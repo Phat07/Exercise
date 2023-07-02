@@ -1,0 +1,63 @@
+.staff-table {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #9a9797;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a048;
+}
+
+.btn-add {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.add-staff-btn {
+    color: rgb(48, 67, 240);
+    background-color: transparent;
+    border: 2px solid rgb(25, 45, 227);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+
+.add-staff-btn:hover {
+    background-color: rgb(138, 142, 138);
+    color: #fff;
+}

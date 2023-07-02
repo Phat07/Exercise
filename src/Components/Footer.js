@@ -1,8 +1,12 @@
-import React, {Component} from "react";
-export default class Footer extends Component{
-    render(){
-        return(
-            <p className="footer">Copyright c 2022</p>
-        )
-    }
-}
+import React from 'react';
+import { Box, Typography } from '@mui/material';
+
+const Footer = () => {
+    return (
+        <Box component="Footer" sx={{mt:'auto', p:2, backgroundColor: '#f5f5f5'}}>
+            <Typography align='center'>2023 Staff Management</Typography>
+        </Box>
+    );
+};
+
+export default Footer;
